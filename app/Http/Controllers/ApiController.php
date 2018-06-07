@@ -69,11 +69,6 @@ class ApiController extends Controller
 
         $goods_category = [];
         $category->goods->forget("pivot");
-    
-        /*foreach ($category->goods as $good) {
-            $good_id = $good->pivot->good_id;
-            $goods_category[] = Good::find($good_id);
-        }*/
 
         $result = [
                 "status" => 200,
