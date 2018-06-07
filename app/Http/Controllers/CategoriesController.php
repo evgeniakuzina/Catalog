@@ -114,7 +114,6 @@ class CategoriesController extends Controller
     {
         //
         $category->delete();
-        //return response()->json(null, 204);
 
         return response()->json([
             "status" => 200,
